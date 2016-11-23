@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo '--------------'
+echo 'bundle install'
+bundle install
+
 echo '++++++++++++++++'
 echo 'Rebuilding _site'
 echo 'rm -rf ./_site'
