@@ -1,6 +1,3 @@
-# This file configures Rack.
-# SOURCE: http://www.johnmurray.io/log/2016/08/08/Jekyll-on-Heroku.html
-
 require 'rack'
 require 'rack/contrib/try_static'
 
