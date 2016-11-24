@@ -51,6 +51,14 @@ echo "$NAME"
 git config --global user.name "$NAME"
 echo
 
+echo '---------------------'
+echo 'git config user.email'
+git config user.email
+
+echo '--------------------'
+echo 'git config user.name'
+git config user.name
+
 echo '------------'
 echo 'heroku login'
 heroku login
@@ -58,20 +66,3 @@ heroku login
 echo '---------------'
 echo 'heroku keys:add'
 heroku keys:add
-
-echo
-echo "Enter your app's name on Heroku:"
-read APP_NAME
-
-HEROKU_NAME=$APP_NAME
-echo '--------------------'
-echo 'git remote rm heroku'
-git remote rm heroku
-
-echo '-----------------------------------------------------'
-echo "git remote add heroku git@heroku.com:$HEROKU_NAME.git"
-git remote add heroku git@heroku.com:$HEROKU_NAME.git
-
-echo '-------------'
-echo 'git remote -v'
-git remote -v
