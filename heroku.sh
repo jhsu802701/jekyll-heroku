@@ -10,7 +10,8 @@
 #    Completed.  The procedure is provided below.
 
 # INITIAL HEROKU SETUP
-# 1. Enter "heroku create".
+# 1. Enter "heroku create --buildpack http://github.com/mattmanning/heroku-buildpack-ruby-jekyll.git".
+#    NOTE: Without the buildpack, Heroku will NOT build the site.
 # 2. Visit your assigned URL. You will see the initial Heroku splash screen.
 # 3. Enter "heroku rename <new name>" to rename your app.  Visit your new URL.
 # 4. Enter 'git push heroku master
